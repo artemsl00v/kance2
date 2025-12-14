@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти | Kance</title>
+</head>
+<body>
+    <header>
+        <!-- Такий самий header -->
+    </header>
+
+    <main>
+        <h1>Контактна інформація</h1>
+        
+        <section>
+            <h2>Наші контакти</h2>
+            <address>
+                <p><strong>Адреса:</strong> м. Київ, вул. Кирилівська, 123</p>
+                <p><strong>Телефон:</strong> <a href="tel:+3804314141134">+38 (043) 141-41-13-4</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@kance.ua">info@kance.ua</a></p>
+                <p><strong>Години роботи:</strong> Пн-Пт: 9:00-20:00, Сб: 10:00-20:00</p>
+            </address>
+        </section>
+        
+        <!-- Форма зворотного зв'язку -->
+        <section>
+            <h2>Форма зворотного зв'язку</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Ваше ім'я:</label>
+                    <input type="text" id="name" name="name" required minlength="2" maxlength="50">
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div>
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[\+]\d{3}[\(]\d{2}[\)]\d{3}[\-]\d{2}[\-]\d{2}|[\+]\d{12}|\d{10}">
+                </div>
+                
+                <div>
+                    <label for="message">Повідомлення:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit">Надіслати повідомлення</button>
+            </form>
+        </section>
+        
+        <!-- Карта -->
+        <section>
+            <h2>Ми на карті</h2>
+            <img src="images/12.png" alt="Карта розташування магазину Kance" width="600" height="400">
+        </section>
+    </main>
+
+<footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Kance</h3>
+                <p>Якісні канцелярські товари для навчання, роботи та творчості.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Швидкі посилання</h3>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Контакти</h3>
+                <address>
+                    <p>📍 м. Київ, вул. Кирилівська, 123</p>
+                    <p>📞 <a href="tel:+3804314141134">+38 (043) 141-41-13-4</a></p>
+                    <p>✉️ <a href="mailto:info@kance.ua">info@kance.ua</a></p>
+                </address>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>© Kance 2025.</p>
+        </div>
+    </footer>
+</body>
+</html>

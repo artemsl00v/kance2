@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик | Kance</title>
+</head>
+<body>
+    <header>
+    </header>
+
+    <main>
+        <h1>Ваш кошик</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Товар</th>
+                    <th>Ціна</th>
+                    <th>Кількість</th>
+                    <th>Сума</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="images/7.jpg" alt="Гелева ручка" width="50" height="50">
+                        Гелева ручка Blue
+                    </td>
+                    <td>45 грн</td>
+                    <td>
+                        <input type="number" value="1" min="1" max="10">
+                    </td>
+                    <td>45 грн</td>
+                    <td>
+                        <button>Видалити</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/6.jpg" alt="Скетчбук" width="50" height="50">
+                        Скетчбук A5
+                    </td>
+                    <td>120 грн</td>
+                    <td>
+                        <input type="number" value="1" min="1" max="5">
+                    </td>
+                    <td>120 грн</td>
+                    <td>
+                        <button>Видалити</button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Загальна сума:</td>
+                    <td colspan="2">165 грн</td>
+                </tr>
+            </tfoot>
+        </table>
+        
+        <!-- Форма оформлення замовлення -->
+        <section>
+            <h2>Оформлення замовлення</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Контактна інформація</legend>
+                    <div>
+                        <label for="order-name">Ім'я та прізвище:</label>
+                        <input type="text" id="order-name" name="order-name" required>
+                    </div>
+                    
+                    <div>
+                        <label for="order-phone">Телефон:</label>
+                        <input type="tel" id="order-phone" name="order-phone" required>
+                    </div>
+                    
+                    <div>
+                        <label for="order-email">Email:</label>
+                        <input type="email" id="order-email" name="order-email" required>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Адреса доставки</legend>
+                    <div>
+                        <label for="order-city">Місто:</label>
+                        <input type="text" id="order-city" name="order-city" required>
+                    </div>
+                    
+                    <div>
+                        <label for="order-address">Адреса:</label>
+                        <textarea id="order-address" name="order-address" required></textarea>
+                    </div>
+                </fieldset>
+                
+                <button type="submit">Оформити замовлення</button>
+            </form>
+        </section>
+    </main>
+
+ <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Kance</h3>
+                <p>Якісні канцелярські товари для навчання, роботи та творчості.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Швидкі посилання</h3>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Контакти</h3>
+                <address>
+                    <p>📍 м. Київ, вул. Кирилівська, 123</p>
+                    <p>📞 <a href="tel:+3804314141134">+38 (043) 141-41-13-4</a></p>
+                    <p>✉️ <a href="mailto:info@kance.ua">info@kance.ua</a></p>
+                </address>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>© Kance 2025.</p>
+        </div>
+    </footer>
+</body>
+</html>
